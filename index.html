@@ -1,34 +1,121 @@
 <html>
-    <head>
-        <style>
-            body {
-                padding-bottom: 350px
-            }
-        </style>
-        <title>Meu primeiro HTML</title>
-    </head>
-    <body>
-        <h1>Angelo</h1>
 
-        <p>Minha primeira página</p>
-        <p>Outro parágrafo</p>
+<head>
+    <style>
+        body {
+            padding-bottom: 350px;
+        }
 
-        <h2>Título</h2>
+        #caixa {
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border-color: aqua;
+            border-radius: 12px;
+            color: white;
+            /* padding: espaçamento interno */
+            padding: 35px;
+            /* margin: espaçamento externo */
+            margin: 10px;
+        }
 
-        <!-- Tag a é para links, onde a propriedade href recebe o valor do link, e a propriedade target como o link será aberto.  -->
-        <a href="https://g1.globo.com/ce" target="_blank">Acesse o G1 Ceará</a>
+        .center {
+            color: blueviolet;
+            text-align: center;
+        }
 
-        <a href="formulario_usuario.html" target="_blank">Cadastre-se</a>
+        td,
+        th {
+            border: 1px solid #dddddd;
+        }
+    </style>
+    <!-- https://emojipedia.org/red-heart -->
+    <title>Meu primeiro HTML❤️</title>
+</head>
 
-        <!-- Tags inline: tag que se fecha na mesma de abertura  -->
-        <hr/>
-        <img src="img/m104.jpg" width="200px"/>
-        <hr />
+<body>
+    <h1>Angelo</h1>
 
-        <h4>Imagem Super Saturno</h4>
-        <br/>
-        
-        <hr/>
-        <img src="img/j1407b.webp" alt="Planeta Super Saturno">
-    </body>
+    <p>Minha primeira página</p>
+    <p>Outro parágrafo</p>
+
+    <h2>Título</h2>
+
+    <!-- Tag a é para links, onde a propriedade href recebe o valor do link, e a propriedade target como o link será aberto.  -->
+    <a href="https://g1.globo.com/ce" target="_blank">Acesse o G1 Ceará</a>
+
+    <a href="formulario_usuario.html" target="_blank">Cadastre-se</a>
+
+    <!-- Tags inline: tag que se fecha na mesma de abertura  -->
+    <hr />
+    <img src="img/m104.jpg" width="200px" />
+    <hr />
+
+    <h4>Imagem Super Saturno</h4>
+    <br />
+
+    <hr />
+    <img src="img/j1407b.webp" alt="Planeta Super Saturno">
+
+    <div id="caixa">
+        <h2>Teste</h2>
+    </div>
+
+    <div class="center">
+        <span>Testando Span centralizado</span>
+        <h3>Testando Centralizado</h3>
+    </div>
+
+    <div class="center">
+        <p>Este é um parágrafo</p>
+    </div>
+
+    <!-- Lista ordenada -->
+    <h4>Comandos básicos git</h4>
+    <ol>
+        <li>
+            <pre>git status</pre>
+        </li>
+        <li>
+            <pre>git add .</pre>
+        </li>
+        <li>
+            <pre>git status</pre>
+        </li>
+        <li>
+            <pre>git commit -m "mensagem"</pre>
+        </li>
+    </ol>
+
+    <!-- Lista não ordenada -->
+    <h4>Pastéis do Excelentíssimo</h4>
+    <ul>
+        <li>Pastel de Frango com Catupiry</li>
+        <li>Pastel de Carne do Sol</li>
+        <li>Coxinha de Frango com Cream Chees</li>
+    </ul>
+
+    <!-- Tabela -->
+    <h3>Filmes Favoritos</h3>
+    <table>
+        <!-- 1a linha tabela são colunas th (table head) -->
+        <tr>
+            <th>Nome</th>
+            <th>Gênero</th>
+            <th>Estrelas</th>
+        </tr>
+        <!-- As sequintes são os dados -->
+        <tr>
+            <td>O Problema dos 3 Corpos</td>
+            <td>Ficção</td>
+            <td>7.7</td>
+        </tr>
+        <tr>
+            <td>Matador de Aluguel</td>
+            <td>Ação</td>
+            <td>6.2</td>
+        </tr>
+    </table>
+</body>
+
 </html>
